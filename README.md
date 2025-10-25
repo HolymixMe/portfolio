@@ -7,7 +7,7 @@ This website is built to share my work as a **Mathematics graduate** with a stro
 ---
 
 ## 🚀 Live Website
-🔗 **Visit my portfolio:** [https://fahmihussain.github.io](https://fahmihussain.github.io/portfolio)
+🔗 **Visit my portfolio:** [https://HolymixME.github.io](https://HolymixMe.github.io/portfolio)
 
 ---
 
@@ -29,9 +29,7 @@ Here are some of the projects featured on my website:
 |----------|--------------|--------|
 | 🧩 **Credit Risk Classification** | Built a logistic regression model to predict credit risk based on customer financial profiles. | Python, Pandas, Scikit-learn |
 | 📈 **Forecasting PAD using Grey-Markov Model** | Modeled and forecasted regional revenue using GM(1,1)-Markov hybrid model. | Python, Excel |
-| 📊 **Data Visualization Dashboard** | Created interactive dashboards to visualize financial KPIs. | Power BI, SQL |
-| 📉 **Market Research Analysis** | Conducted e-commerce product research using web scraping and clustering. | Python, BeautifulSoup, Excel |
-
+| 📊 **Data Visualization Dashboard** | Created interactive dashboards to visualize financial KPIs. | Power BI, SQL, Streamlit, Matplotlib |
 ---
 
 ## 🧩 Tech Stack
