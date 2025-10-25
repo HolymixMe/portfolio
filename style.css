@@ -1,118 +1,114 @@
+/* ==== Global Style ==== */
 body {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f7f9fc;
-  color: #333;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 40px;
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
 }
 
+/* ==== Heading ==== */
 h1 {
-  color: #0056b3;
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
-a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
+/* ==== Project Section ==== */
 .project-card {
   display: flex;
-  align-items: center;
-  gap: 0.8rem;
+  align-items: flex-start;
   background: #fff;
-  padding: 0.9rem 1.1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  margin-bottom: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+  overflow: hidden;
+  padding: 16px;
+  gap: 20px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  max-width: 700px;
 }
 
 .project-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
+/* ==== Image (Preview) ==== */
 .project-card img {
-  width: 85px;
-  height: 55px;
+  width: 60px;              /* Lebih kecil, berbentuk kotak */
+  height: 60px;
   object-fit: cover;
   border-radius: 6px;
   flex-shrink: 0;
 }
 
+/* ==== Project Text ==== */
 .project-card h3 {
-  margin: 0;
-  color: #222;
-  font-size: 1rem;
+  margin: 0 0 10px;
+  color: #2c3e50;
+  font-size: 1.2rem;
 }
 
 .project-card p {
+  margin: 0 0 12px;
   color: #555;
-  font-size: 0.85rem;
-  margin: 0.3rem 0 0.6rem 0;
-  line-height: 1.4;
+  font-size: 0.95rem;
 }
 
+/* ==== Buttons ==== */
 .buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 8px;
 }
 
 .btn {
   text-decoration: none;
-  padding: 0.3rem 0.7rem;
-  border-radius: 5px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  transition: background-color 0.2s, transform 0.2s;
-}
-
-.btn.primary {
-  background-color: #007bff;
-  color: white;
-}
-
-.btn.secondary {
-  background-color: #444;
-  color: white;
+  background: #0078ff;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
 }
 
 .btn:hover {
-  transform: scale(1.03);
+  background: #005fcc;
 }
 
-.btn.primary:hover {
-  background-color: #0056b3;
+.btn.secondary {
+  background: #e0e0e0;
+  color: #333;
 }
 
 .btn.secondary:hover {
-  background-color: #222;
+  background: #d4d4d4;
 }
 
+/* ==== Responsive ==== */
 @media (max-width: 600px) {
   .project-card {
     flex-direction: column;
-    text-align: left;
-    max-width: 100%;
+    align-items: center;
+    text-align: center;
   }
 
   .project-card img {
-    width: 100%;
-    height: auto;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .buttons {
+    justify-content: center;
   }
 }
-
-
