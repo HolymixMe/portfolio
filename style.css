@@ -238,7 +238,6 @@ h2 {
 #contact h2 {
   font-size: 1.4rem;
   margin-bottom: 15px;
-  text-align: center;
 }
 
 /* Gunakan layout yang sama seperti skills */
@@ -304,6 +303,7 @@ footer {
     flex: 0 0 240px;
   }
 }
+
 
 
 
