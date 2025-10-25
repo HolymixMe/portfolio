@@ -25,3 +25,58 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.project-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.project-card img {
+  width: 160px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #222;
+}
+
+.project-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 0.8rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn.secondary {
+  background-color: #555;
+}
+
+.btn.secondary:hover {
+  background-color: #333;
+}
