@@ -230,6 +230,74 @@ h2 {
 .btn.secondary:hover {
   background: #1d4ed8;
 }
+/* --- Contact Section with Icons --- */
+#contact {
+  background: #f1f5ff;
+  border-top: 3px solid #1e40af;
+  border-bottom: 3px solid #1e40af;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+#contact h2 {
+  color: #1e3a8a;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-icons a:hover img {
+  transform: scale(1.15);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.contact-text p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.contact-text a {
+  color: #1e40af;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.contact-text a:hover {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .contact-icons {
+    gap: 1.2rem;
+  }
+
+  .contact-icons img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .contact-text p {
+    font-size: 0.85rem;
+  }
+}
+
 
 /* ======== FOOTER ======== */
 footer {
@@ -261,5 +329,6 @@ footer {
     flex: 0 0 240px;
   }
 }
+
 
 
