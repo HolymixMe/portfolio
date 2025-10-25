@@ -240,38 +240,57 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* Gunakan layout yang sama seperti skills */
+/* ======== CONTACT SECTION (MIRRORING SKILL STYLE) ======== */
+#contact {
+  margin-top: 3rem;
+}
+
+#contact h2 {
+  color: #1e3a8a;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Gunakan ulang gaya grid dari skill section */
 #contact .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+  gap: 0.8rem;
+  justify-items: center;
 }
 
+/* Tautan klik namun tetap tampak seperti kartu skill */
 #contact .skill-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 0.6rem 0.5rem;
+  width: 85px;
   text-align: center;
-  width: 90px;
-  transition: transform 0.25s, box-shadow 0.25s;
   text-decoration: none;
-  color: inherit;
-}
-
-#contact .skill-card img {
-  width: 45px;
-  height: 45px;
-  margin-bottom: 8px;
-  border-radius: 50%;
-  transition: transform 0.2s;
-}
-
-#contact .skill-card:hover img {
-  transform: scale(1.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #contact .skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+#contact .skill-card img {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 0.3rem;
+  object-fit: contain;
+}
+
+#contact .skill-card p {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #1e3a8a;
+  margin: 0;
+}
+
 
 /* ======== FOOTER ======== */
 footer {
@@ -303,6 +322,7 @@ footer {
     flex: 0 0 240px;
   }
 }
+
 
 
 
