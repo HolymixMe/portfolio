@@ -1,104 +1,213 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f8f9fa;
-  color: #222;
+/* ======== GLOBAL ======== */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.projects {
-  max-width: 100%;
-  padding: 30px;
-}
-
-.projects h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.8rem;
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9fafc;
   color: #333;
+  line-height: 1.6;
 }
 
-/* ==== Horizontal Scroll Container ==== */
+/* ======== HEADER ======== */
+header {
+  background: #1e40af;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+header img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ======== MAIN ======== */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  border-left: 5px solid #1e40af;
+  padding-left: 0.75rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* ======== CARD (Education & Experience) ======== */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-bottom: 0.3rem;
+  color: #1e3a8a;
+}
+
+.card ul {
+  margin-left: 1rem;
+  list-style-type: disc;
+}
+
+.card li {
+  margin-bottom: 0.4rem;
+}
+
+/* ======== PROJECT SECTION ======== */
+.projects {
+  margin-top: 3rem;
+}
+
 .project-container {
   display: flex;
+  gap: 1rem;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 18px;
-  padding-bottom: 15px;
-  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
 }
 
 .project-container::-webkit-scrollbar {
-  height: 6px;
+  height: 8px;
 }
 
 .project-container::-webkit-scrollbar-thumb {
-  background: #bbb;
-  border-radius: 4px;
+  background: #1e40af;
+  border-radius: 8px;
 }
 
-/* ==== Project Card ==== */
 .project-card {
-  flex: 0 0 260px;
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  scroll-snap-align: start;
-  padding: 14px;
+  flex: 0 0 280px;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
 
 .project-card img {
   width: 100%;
-  height: 120px;
+  height: 160px;
+  border-radius: 8px;
   object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0.75rem;
 }
 
-/* ==== Text ==== */
 .project-card h3 {
-  margin: 0 0 6px;
-  font-size: 1rem;
-  color: #2c3e50;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: #1e3a8a;
 }
 
 .project-card p {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #555;
-  margin-bottom: 10px;
+  margin-bottom: 0.75rem;
 }
 
-/* ==== Buttons ==== */
 .buttons {
   display: flex;
-  gap: 6px;
+  gap: 0.5rem;
 }
 
 .btn {
   text-decoration: none;
-  background: #0078ff;
-  color: #fff;
-  padding: 4px 10px;
+  background: #1e40af;
+  color: white;
+  padding: 0.4rem 0.75rem;
   border-radius: 6px;
-  font-size: 0.8rem;
-  transition: background 0.3s;
+  font-size: 0.85rem;
+  transition: background 0.2s ease;
 }
 
 .btn:hover {
-  background: #005fcc;
+  background: #1e3a8a;
 }
 
 .btn.secondary {
-  background: #e0e0e0;
-  color: #333;
+  background: #2563eb;
 }
 
 .btn.secondary:hover {
-  background: #d4d4d4;
+  background: #1d4ed8;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #1e3a8a;
+  color: white;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card img {
+    margin-bottom: 0.5rem;
+  }
+
+  .project-container {
+    gap: 0.75rem;
+  }
+
+  .project-card {
+    flex: 0 0 240px;
+  }
 }
