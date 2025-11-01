@@ -120,6 +120,7 @@ h2 {
   gap: 1rem;
   align-items: flex-start;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
 }
 
 .card:hover {
@@ -387,6 +388,7 @@ footer {
     text-align: left !important;
   }
 }
+
 
 
 
