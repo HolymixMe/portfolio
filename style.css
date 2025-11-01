@@ -351,7 +351,7 @@ footer {
   .card {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
 
   .card img {
@@ -366,35 +366,6 @@ footer {
     flex: 0 0 240px;
   }
 }
-
-
-/* Pastikan bagian Education & Experience rata kiri di semua perangkat */
-#education, #experience {
-  text-align: left;
-}
-
-#education .card, #experience .card {
-  align-items: flex-start;
-  text-align: left;
-}
-
-/* Jika ada aturan center di mode mobile, override di sini */
-@media (max-width: 768px) {
-  #education, #experience {
-    text-align: left !important;
-  }
-  #education .card, #experience .card {
-    align-items: flex-start !important;
-    text-align: left !important;
-  }
-}
-
-
-
-
-
-
-
 
 
 
