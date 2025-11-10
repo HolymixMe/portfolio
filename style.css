@@ -442,27 +442,28 @@ h2 {
   margin-bottom: 0.4rem;
 }
 
-/* ======== DOWNLOAD BUTTON (center) ======== */
-.download-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
+/* ======== CV DOWNLOAD BUTTON ======== */
+.cv-download {
+  margin-top: 1rem;
+  text-align: center; /* ⬅️ Ini yang bikin tombol di tengah */
 }
 
-.download-btn {
-  background: #1e3a8a;
+.btn-download {
+  display: inline-block;
+  background-color: #1e3a8a;
   color: white;
-  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.download-btn:hover {
-  background: #2e53d0;
-  transform: scale(1.05);
+.btn-download:hover {
+  background-color: #3b82f6;
+  transform: translateY(-2px);
 }
+
 
 
 
