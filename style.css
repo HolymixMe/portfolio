@@ -1,4 +1,4 @@
-/* ======== GLOBAL ======== */
+/* ========== GLOBAL ========== */
 * {
   margin: 0;
   padding: 0;
@@ -6,18 +6,19 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #f9fafc;
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fa;
   color: #333;
   line-height: 1.6;
 }
 
-/* ======== HEADER ======== */
+/* ========== HEADER ========== */
 header {
-  background: #1e40af;
-  color: white;
   text-align: center;
+  background: #1e3a8a;
+  color: white;
   padding: 3rem 1rem;
+  border-radius: 0 0 20px 20px;
 }
 
 header img {
@@ -40,7 +41,7 @@ header p {
   opacity: 0.9;
 }
 
-/* ======== MAIN ======== */
+/* ========== MAIN ========== */
 main {
   max-width: 900px;
   margin: 2rem auto;
@@ -58,7 +59,48 @@ h2 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
-/* ======== SKILLS SECTION (CATEGORIZED & COMPACT) ======== */
+
+/* ========== CARD (Education & Experience) ========== */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-bottom: 0.3rem;
+  color: #1e3a8a;
+}
+
+.card ul {
+  margin-left: 1rem;
+  list-style-type: disc;
+}
+
+.card li {
+  margin-bottom: 0.4rem;
+}
+
+/* ========== SKILLS ========== */
 #skills {
   margin-top: 2.5rem;
 }
@@ -83,7 +125,7 @@ h2 {
 .skill-card {
   background: white;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   padding: 0.6rem 0.5rem;
   width: 85px;
   text-align: center;
@@ -92,7 +134,7 @@ h2 {
 
 .skill-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .skill-card img {
@@ -109,47 +151,7 @@ h2 {
   margin: 0;
 }
 
-/* ======== CARD (Education & Experience) ======== */
-.card {
-  background: white;
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin-top: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  text-align: left;
-}
-
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-}
-
-.card img {
-  width: 90px;
-  height: 90px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.card h3 {
-  margin-bottom: 0.3rem;
-  color: #1e3a8a;
-}
-
-.card ul {
-  margin-left: 1rem;
-  list-style-type: disc;
-}
-
-.card li {
-  margin-bottom: 0.4rem;
-}
-
-/* ======== PROJECT SECTION ======== */
+/* ========== PROJECTS ========== */
 .projects {
   margin-top: 3rem;
 }
@@ -176,13 +178,13 @@ h2 {
   background: white;
   border-radius: 12px;
   padding: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .project-card img {
@@ -205,23 +207,29 @@ h2 {
   margin-bottom: 0.75rem;
 }
 
+/* ========== BUTTONS ========== */
 .buttons {
   display: flex;
   gap: 0.5rem;
 }
 
-.btn {
+.btn,
+.btn-download {
+  display: inline-block;
   text-decoration: none;
   background: #1e40af;
   color: white;
-  padding: 0.4rem 0.75rem;
+  padding: 0.5rem 1rem;
   border-radius: 6px;
   font-size: 0.85rem;
-  transition: background 0.2s ease;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.btn:hover {
+.btn:hover,
+.btn-download:hover {
   background: #1e3a8a;
+  transform: translateY(-2px);
 }
 
 .btn.secondary {
@@ -232,66 +240,12 @@ h2 {
   background: #1d4ed8;
 }
 
-#contact {
-  margin-top: 40px;
-}
-
-#contact h2 {
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-}
-
-/* ======== CONTACT SECTION (MIRRORING SKILL STYLE) ======== */
-#contact {
-  margin-top: 3rem;
-}
-
-#contact h2 {
-  color: #1e3a8a;
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-/* Gunakan ulang gaya grid dari skill section */
-#contact .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
-  gap: 0.8rem;
-  justify-items: center;
-}
-
-/* Tautan klik namun tetap tampak seperti kartu skill */
-#contact .skill-card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  padding: 0.6rem 0.5rem;
-  width: 85px;
+.cv-download {
+  margin-top: 1rem;
   text-align: center;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#contact .skill-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-#contact .skill-card img {
-  width: 28px;
-  height: 28px;
-  margin-bottom: 0.3rem;
-  object-fit: contain;
-}
-
-#contact .skill-card p {
-  font-size: 0.7rem;
-  font-weight: 500;
-  color: #1e3a8a;
-  margin: 0;
-}
-
+/* ========== CERTIFICATES ========== */
 .certificates-container {
   display: flex;
   overflow-x: auto;
@@ -306,7 +260,7 @@ h2 {
   text-align: center;
   padding: 0.6rem;
   flex: 0 0 auto;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s, box-shadow 0.2s;
   text-decoration: none;
   color: inherit;
@@ -314,7 +268,7 @@ h2 {
 
 .cert-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .cert-card img {
@@ -326,7 +280,6 @@ h2 {
 .cert-card p {
   font-size: 0.75rem;
   font-weight: 500;
-  margin: 0.2rem 0 0;
   color: #1e3a8a;
 }
 
@@ -335,7 +288,30 @@ h2 {
   color: #555;
 }
 
-/* ======== FOOTER ======== */
+/* ========== CONTACT ========== */
+#contact {
+  margin-top: 3rem;
+}
+
+#contact h2 {
+  color: #1e3a8a;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#contact .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+  gap: 0.8rem;
+  justify-items: center;
+}
+
+#contact .skill-card {
+  text-decoration: none;
+}
+
+/* ========== FOOTER ========== */
 footer {
   text-align: center;
   padding: 1.5rem;
@@ -345,128 +321,14 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ======== RESPONSIVE ======== */
+/* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
   .card {
     flex-direction: column;
-    align-items: center;
     text-align: left;
-    flex-direction: row;
-  }
-
-  .card img {
-    margin-bottom: 0.5rem;
-  }
-
-  .project-container {
-    gap: 0.75rem;
   }
 
   .project-card {
     flex: 0 0 240px;
   }
 }
-
-body {
-  font-family: "Poppins", sans-serif;
-  background: #f5f7fa;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
-header {
-  text-align: center;
-  background: #1e3a8a;
-  color: white;
-  padding: 2rem 1rem;
-  border-radius: 0 0 20px 20px;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-h2 {
-  color: #1e3a8a;
-  display: inline-block;
-  padding-bottom: 0.3rem;
-}
-
-/* ======== CARD (Education & Experience) ======== */
-.card {
-  background: white;
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin-top: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-}
-
-.card img {
-  width: 90px;
-  height: 90px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.card h3 {
-  margin-bottom: 0.3rem;
-  color: #1e3a8a;
-}
-
-.card ul {
-  margin-left: 1rem;
-  list-style-type: disc;
-}
-
-.card li {
-  margin-bottom: 0.4rem;
-}
-
-/* ======== CV DOWNLOAD BUTTON ======== */
-.cv-download {
-  margin-top: 1rem;
-  text-align: center; /* ⬅️ Ini yang bikin tombol di tengah */
-}
-
-.btn-download {
-  display: inline-block;
-  background-color: #1e3a8a;
-  color: white;
-  font-weight: 600;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn-download:hover {
-  background-color: #3b82f6;
-  transform: translateY(-2px);
-}
-
-
-
-
-
-
-
-
-
