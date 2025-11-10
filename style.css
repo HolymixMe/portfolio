@@ -400,7 +400,6 @@ h2 {
   border-bottom: 2px solid #1e3a8a;
   display: inline-block;
   padding-bottom: 0.3rem;
-  margin-bottom: 1rem;
 }
 
 /* ======== CARD (Education & Experience) ======== */
@@ -463,6 +462,7 @@ h2 {
   background-color: #3b82f6;
   transform: translateY(-2px);
 }
+
 
 
 
