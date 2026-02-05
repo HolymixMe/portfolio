@@ -29,7 +29,7 @@ Here are some of the projects featured on my website:
 |----------|--------------|--------|
 | 🧩 **Credit Risk Classification** | Built a logistic regression model to predict credit risk based on customer financial profiles. | Python, Pandas, Scikit-learn |
 | 📈 **Forecasting PAD using Grey-Markov Model** | Modeled and forecasted regional revenue using GM(1,1)-Markov hybrid model. | Python, Excel |
-| 📊 **Data Visualization Dashboard** | Created interactive dashboards to visualize financial KPIs. | Power BI, SQL, Streamlit, Matplotlib |
+| 📊 **Data Visualization Dashboard** | Created interactive dashboards to visualize financial KPIs. | Power BI, Looker Studio, Streamlit, Matplotlib |
 ---
 
 ## 🧩 Tech Stack
