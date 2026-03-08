@@ -129,8 +129,8 @@
     }
     .proj-scroll:active { cursor: grabbing; }
     .proj-scroll::-webkit-scrollbar { height: 4px; }
-    .proj-scroll::-webkit-scrollbar-track { background: var(--border); border-radius: 2px; }
-    .proj-scroll::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 2px; }
+    .proj-scroll::-webkit-scrollbar-track { background: #dbeafe; border-radius: 2px; }
+    .proj-scroll::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
     .proj-card {
       flex: 0 0 220px; scroll-snap-align: start;
       background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
@@ -157,8 +157,8 @@
     }
     .certs-scroll:active { cursor: grabbing; }
     .certs-scroll::-webkit-scrollbar { height: 4px; }
-    .certs-scroll::-webkit-scrollbar-track { background: var(--border); border-radius: 2px; }
-    .certs-scroll::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 2px; }
+    .certs-scroll::-webkit-scrollbar-track { background: #dbeafe; border-radius: 2px; }
+    .certs-scroll::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
     .cert-card {
       flex: 0 0 130px; scroll-snap-align: start;
       background: var(--surface); border: 1px solid var(--border); border-radius: 9px;
@@ -169,7 +169,7 @@
     .cert-card img { width: 28px; height: 28px; object-fit: contain; border-radius: 4px; }
     .cert-name { font-size: 0.71rem; font-weight: 500; color: var(--text); line-height: 1.35; }
     .cert-issuer { font-size: 0.65rem; color: var(--muted); }
-
+    
     /* CONTACT */
     .contact-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem; }
     .contact-chip {
@@ -233,6 +233,9 @@
       </div>
     </div>
     <p class="hero-desc">Turning raw data into meaningful decisions. Experienced in data analysis, machine learning, and business intelligence.</p>
+     <div class="hero-btns">
+      <a href="Muhammad Fahmi Hussain - CV.pdf" download class="btn btn-ghost">⬇ Download CV</a>
+    </div>
   </section>
 
   <section id="education">
@@ -469,7 +472,6 @@
         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">GitHub
       </a>
     </div>
-      <a href="Muhammad Fahmi Hussain - CV.pdf" download class="btn btn-ghost">⬇ CV</a>
   </section>
 
 </div>
@@ -519,4 +521,5 @@
     document.body.style.overflow = open ? 'hidden' : '';
   });
   menu.querySelectorAll('a').forEach(a => a.addEventListener('c
+
 
