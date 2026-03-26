@@ -51,5 +51,3 @@ This website is built with:
 This project is open source under the [MIT License](LICENSE).
 
 ---
-
-⭐ If you like this portfolio, feel free to fork it or use it as a template for your own!
